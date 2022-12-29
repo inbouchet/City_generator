@@ -1,0 +1,117 @@
+\section{Besoins non-fonctionnels}
+
+\subsection{Systeme de priorité}
+
+\begin{center}
+\colorbox{red}{\color{red}CouleurcouleurCouleurcouleur}\\ Couleur rouge : Priorité élevée \\
+
+\bigskip
+
+\colorbox{cyan}{\color{cyan}CouleurcouleurCouleurcouleur}\\ Couleur verte : Priorité moyenne\\
+
+\bigskip
+
+\colorbox{brown}{\color{brown}CouleurcouleurCouleurcouleur}\\ Couleur noire : Priorité faible 
+\end{center}
+ 
+\besoin{}
+{\textcolor{cyan}{Taille de la ville }}
+{ 
+\begin{itemize}
+  \item Une ville qui en plus de l'infrastructure (places, jardins, chateau, marche, fermes, hôtels de ville, mairie, église, écoles), également un certain nombre de bâtiments résidentiels afin que le nombre de bâtiments dans la ville soit au moins supérieur à 100.
+ \item Le nombre total de bâtiments dans la ville est inférieur à 10 000,  ce qui est bien moins que le nombre de citadins, mais la taille de la ville est limitée par le fait qu'elle a été construite au Médiéval .
+ 
+ \item Ce nombre peut être augmenté en fonction des performances des algorithmes .
+ 
+\end{itemize}
+}
+{}
+{}
+\besoin{}
+{\textcolor{cyan}{Temps de génération}}
+{le temps de génération du plan  doit être raisonnable. Grâce aux algorithmes impliqués, Le modèle de la ville (Citygen) présenté contient plus de 24 000 bâtiments et le temps de génération complet de la ville, y compris les routes adaptatives, les routes secondaires et les bâtiments, n'est que de 3,5 secondes.
+
+Les bâtiments sont actuellement texturés en utilisant seulement un petit nombre de matériaux.
+}
+{}
+{
+\begin{itemize}
+ \item\textbf{ Description : } Vérifier que le temps de génération une ville avec une taille entre intervalle (1000, 10000)  est inférieur à 5 secondes.  \\
+ \textbf{Entrée : } un modèle de ville avec 5000 baîments.  \\
+ \textbf{Sortie Attendu : } Le temps de génération soit inférieur à 5 secondes . \\
+ \textbf{Déroulement du test: } On crée un compteur pour calculer le temps qu’il dépense après chaque lancement de chaque Génération test. 
+ 
+ \item\textbf{ Description : }  Vérifier qu'une ville en taille plus grande que la limite est non acceptée par le générateur de ville.  \\
+ \textbf{Entrée : }  un modèle de ville avec 50000 batîments (hors de la taille acceptée).  \\
+ \textbf{Sortie Attendu: } Affiche une indication que la plage acceptable a été dépassée. 
+\end{itemize}
+}
+\besoin{}
+{\textcolor{red}{Interface}}
+{
+Le programme doit intégrer une interface utilisable par le client, possédant des boutons spécifiques (voir besoin Fonctonnalités de l'interface) et un aspect clair et fonctionnel.
+
+\begin{itemize}
+\item L’utilisation d’un symbole largement compris (comme une poubelle pour un bouton de suppression, un signe plus pour ajouter quelque chose, ou une loupe pour la recherche) en combinaison avec du contenu.
+
+\item Choisir une couleur avec une signification pertinente (vert pour un bouton « commencer à générer », rouge pour « arrêter de la génération»).
+
+\item Surligner le bouton correspondant à l’action souhaitée.
+
+\item Pour les actions ayant des conséquences irréversibles, comme la suppression permanente de fichier. On  demande aux utilisateurs s’ils sont sûrs de vouloir passer à l’action.
+\end{itemize}
+}
+{}
+{
+\begin{itemize}
+
+\item \textbf{Description : } Vérifier que les symboles de bouton correspondent à leur action.\newline
+\textbf{ Analyse du test: } Tester le signification des boutons utilisables sur l'interface. \newline
+
+
+\item \textbf{ Description : }Vérifier que le programme affiche une indication waring quand l'utilisateur souhaite exécuter une action  irréversibles. \newline
+\textbf{Déroulement du test : } On demande de supprimer le plan courant  \newline
+\textbf{Entrée : } Un programme générant une interface pour l'utilisateur.\newline
+\textbf{Sortie Attendu : }  L'affichage d'une indication waring.
+
+\item \textbf{ Description  : } Vérifier que  tous les boutons ont été surligné quand l'utilisateur choisi une action.
+\textbf{Déroulement du test : } On clique tous les actions proposées et voir s’ils ont été surlignées. \newline
+\end{itemize}
+}
+\besoin{}
+{\textcolor{cyan}{Possibilité de récupération} }
+{ 
+A partir du deuxième évolution de ville , L’utilisateur peut récupérer une version anciennes de ville. Après chaque évolution, nous stockons les nouvelles pièces dans un tableau dans l'ordre, le numéro de série correspondant est sa version, et chaque fois que nous revenons à la version précédente, nous montrons simplement les nouvelles pièces qui ont été ajoutées.
+}
+{}
+{
+\begin{itemize}
+ \item  \textbf{ Description: } Vérifier que tous les versions anciennes de villes peuvent être récupérées.\\
+ \textbf{ Entrée : } des numéro de l’anciennes versions . \\
+ \textbf{Sortie Attendu : } Une représentation graphique d’une ville en version ancienne demandée. \\
+ \textbf{Déroulement du test: } Effectuer une géneration de ville et choisir une version de ville ancienne.  
+ 
+ \item \textbf{ Description: } Vérifier qu'une demande de version non-existante ne bloque pas le système. \\
+ \textbf{Entrée : } un numéro de la version ville non-existante. \\
+ \textbf{ Sortie Attendu: } Affiche un message d'erreur. 
+\end{itemize}
+}
+\besoin{} 
+{\textcolor{cyan}{Pente de la route }}
+{
+Le calcul du pourcentage de la pente du terrain permet de connaître le type de pente : pente douce, modérée ou forte. 
+
+     - route pente forte est 8 \%-12 \% 
+
+     - route pente modérée est 5 \%-8 \%
+
+     - route pente douce est 0 \%-5 \%
+
+Le calcul de la pente est exprimé en pourcentage et s’obtient en appliquant la formule suivante : \\
+
+Pente (\%) = Dénivelé (m) / Longueur parcourue (m) \\
+
+Dénivelé = Hauteur totale entre le point d'arrivée et le point de départ.
+}
+{}
+{}

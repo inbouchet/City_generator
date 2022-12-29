@@ -1,0 +1,27 @@
+Liste des points vues en Td pdp a changer pour le prochain rendu:
+1. Introduction
+	1.1 Objectifs
+	1.2 les cibles
+
+2. Analyse
+	2.1 Interface et options
+	2.2 Test unitaires
+	2.3 Analyse des élements de la ville
+	2.4 Performance de citygen
+	2.5 Compatibilité
+
+3. Analyse de l'existant - Medieva Fantasy City
+	3.1 Interface et fonctionemment
+	3.2 Performance de Medievl Fantasy City Generator
+	3.3 Performances de la machine personnelle
+
+4. Besoins fonctionnels
+	- Besoin 1
+	- Besoin 2
+	- Besoin 3
+	- Besoin 4
+	- Besoin 5
+	- Besoin 6
+	- Besoin 7
+
+5. Besoins non-fonctionnels

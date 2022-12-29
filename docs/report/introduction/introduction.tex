@@ -1,0 +1,40 @@
+\section{Résumé}
+
+Dans notre projet nous allons chercher à modéliser une ville en 3D grâce à l'outil Unity, le but de notre création sera de :
+\begin{itemize}
+	\item Créer un terrain en relief avec une surface plus plane pour placer la ville
+	\item Créer une ville entourée d'une muraille pour obtenir un aspect de ville ancienne, ou de ville médiévale
+	\item La ville devra être composé de bâtiments le long des routes et à l'intérieur de la muraille
+	\item On doit donc aussi y retrouver des routes qui pour les principales sortiront de la ville par des portes situées sur la muraille
+	\item Dans la partie extérieure de la ville on doit pouvoir voir aussi des rivières
+	\item La création de la ville doit pouvoir être manipulable par une interface pour établir la taille de la ville ou le nombre de bâtiments.
+\end{itemize}
+
+\section{Introduction}
+
+Le projet de génération de villes aléatoires consiste à créer une carte d’une ville à partir d'un plan vide, modélisant ainsi les routes, les bâtiments, et d’autres infrastructures, sur une carte
+ayant des spécificités environnementales, elles-mêmes générées par le programme.
+Pour mettre à bien notre projet, nous allons utiliser des ressources tel que :
+
+\tab - L’article de CityGen et La thèse de George Kelly sur la génération de villes aléatoires
+
+\tab - L’application Toy Town de Watabou
+\subsection{Les objectifs}
+\begin{itemize}
+    
+  \item Génération d'un terrain 3D possédant des collines, montagnes, rivières, lacs.
+  \item Création de routes principales qui connectent la ville à l'extérieur des murailles, avec des petites routes annexes au sein de la ville et à l'extérieur.
+  \item Les routes s'adaptent au terrain, elle doivent être le plus possible sur des surfaces planes.
+  \item Une muraille entoure la ville avec des portes dans des endroits stratégiques.
+  \item Des places, jardins (au milieu de la ville préférablement).
+  \item Plusieurs types de bâtiments : château, ferme, hôtel de ville, mairie, école, qui sont générés grâce a l'algorithme de placement de structures clés, vers le centre de la ville.
+  \item On peut avoir des cellules entre les routes où poser des bâtiments, les cellules peuvent être de plusieurs formes, d'un triangle (3 côtés) à un hexagone (6 côtés).
+\end{itemize}
+
+\subsection{Les utilisations}
+
+L’utilisation d’un générateur de villes pourrait être utile pour les entreprises cherchant à créer de nouvelles infrastructures dans des villes déjà existantes, ou pour modéliser par exemple des routes sur une carte générée par le programme.
+
+La génération d'une ville médiévale pourrait être utile aux chercheurs dans le domaine historique cherchant à créer une représentation d'une ville ancienne.
+
+Créer des villes est également très utile dans le domaine des jeux vidéos pour modéliser les maps des jeux.

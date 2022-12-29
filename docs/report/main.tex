@@ -1,0 +1,151 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx}
+\usepackage[T1]{fontenc} 
+\usepackage{geometry}
+
+\usepackage{etoolbox}
+\usepackage{todonotes}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{listings}
+
+\usepackage[ruled,lined]{algorithm2e}
+
+\usepackage[font=footnotesize,labelfont=bf,singlelinecheck=false,center]{caption}
+
+\renewcommand{\baselinestretch}{1,2} 
+
+\bibliographystyle{alpha}
+
+\newcounter{besoin}
+
+% Descriptif des besoins:
+% 1 - Label du besoin pour 
+% 2 - Titre du besoin
+% 3 - Description
+% 4 - Gestion d'erreurs
+% 5 - Spécifications tests
+\newcommand{\besoin}[5]{%
+  \refstepcounter{besoin}% 
+    \hspace{\stretch{1}} \rule{0.8\linewidth}{1mm} \hspace{\stretch{1}}
+    \medskip 
+    \begin{center}\label{besoin:#1}\textbf{Besoin~\thebesoin: #2}\end{center}
+    \ifstrempty{#3}{}{\textbf{Description:} #3\par}
+    \ifstrempty{#4}{}{\textbf{Gestion d'erreurs:} #4\par}
+    \ifstrempty{#5}{}{\textbf{Tests:} #5\par}
+    \bigskip \bigskip 
+    \hspace{\stretch{1}} \rule{0.8\linewidth}{1mm} \hspace{\stretch{1}}
+    \bigskip \bigskip 
+  }
+
+
+\newcommand{\besointmp}[5]{%
+  \refstepcounter{besoin}% 
+    \hspace{\stretch{1}} \rule{0.8\linewidth}{1mm} \hspace{\stretch{1}}
+    \medskip 
+    \begin{center}\label{besoin:#1}\textbf{Besoin~\thebesoin: #2}\end{center}
+    \ifstrempty{#3}{}{\textbf{Description:} #3\par}
+    \ifstrempty{#4}{}{\textbf{Gestion d'erreurs:} #4\par}
+    \ifstrempty{#5}{}{\textbf{Tests:} #5\par}
+  }
+
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\newcommand{\refBesoin}[1]{%
+  Besoin~\ref{besoin:#1}%
+}
+
+\geometry{hmargin=2 cm}
+\geometry{vmargin=2 cm}
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{hidelinks}
+
+\urlstyle{same}
+
+
+\begin{document}
+
+% end-pageTitle
+\begin{center}
+
+\includegraphics[width=0.8\textwidth]{images/logo.jpg}~\\[0.cm]
+
+\textsc{\LARGE Université de Bordeaux}\\[1.5cm]
+
+%\textsc{\Large }\\[0.5cm]
+
+% Title
+
+\noindent\rule{\textwidth}{3pt}
+\\
+{\huge \bfseries Génération de villes: \\ Analyse des besoins \\ [0.4cm] }
+\noindent\rule{\textwidth}{3pt}
+
+
+
+% Author and supervisor
+\bigskip
+\textbf{ \Large SOULAMI}  \Large Mehdi \\
+\textbf{ \Large BOUCHET }  \Large Ines \\
+\textbf{ \Large EL-KERZAZI }  \Large Mohammed-amine \\
+\textbf{ \Large YANG }  \Large Yi \\
+\textbf{ \Large NOUAMANI }  \Large Ayoub \\
+\vfill
+% Bottom of the page
+{\large \today}
+\end{center}
+% end-pageTitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\input{introduction/introduction.tex}
+
+\input{analyseexistant/analyseexistant.tex}
+
+\newpage
+
+\input{besoinsnonfonctionnels/besoinsnonfonctionnels.tex}
+
+\newpage
+
+\input{besoinsfonctionnels/besoinsfonctionnels.tex}
+
+\newpage
+
+\input{algorithme/algorithme.tex}
+
+\newpage
+
+\input{schemaarchitecture/schemaarchitecture.tex}
+
+\newpage
+
+\input{unity/unity.tex}
+
+\newpage
+
+\input{fonctionnement/fonctionnement.tex}
+
+\newpage
+
+\input{tests/tests.tex}
+
+\input{afinir/afinir.tex}
+
+\input{conclusion/conclusion.tex}
+
+\newpage
+
+\bibliography{sources.bib}
+
+\end{document}
+

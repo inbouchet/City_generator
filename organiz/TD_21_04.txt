@@ -1,0 +1,19 @@
+-> Éclaircir la partie sur le bruit de Perlin : OK
+-> Enlever le premier schéma de l'UML et le remplacer par un diagramme de paquetage : OK
+-> Revoir le besoin sur le lac et les rivières : OK
+-> Mettre le système de priorité avant les besoins et pas dans une section : OK 
+-> Renommer analyse nouvelle existant : OK
+-> Revoir le PDF annoté : OK
+-> Corriger les erreurs du pdflatex : OK
+-> Revoir les tests dans les besoins et éviter les détails : OK
+-> Mettre les pentes de route en dernier besoin non fonctionnel : OK
+-> Être plus précis sur les algorithmes : OK
+-> Mettre la section architecture après la section algorithme, et dire où on place les algorithmes dans l'architecture : OK
+-> Revoir la mise en page caractère trop petit : OK
+-> Créer un nouveau besoin pour la possibilité de récupération et ne pas la mettre dans l'interface : OK
+-> Revoir l'intro en particulier la description des routes et faire une liste pour dire ce qu'on veut sur la ville qui serait utile pour les tests : OK
+
+-> Détailler au mieux l'interface dans l'architecture 
+-> Écrire des tests de limite et de performance : combien de tour ? Combien de porte par mur ? Pour chacun des paramètres ou on a un intervalle il faut tester les limites en dehors de l'intervalle 
+-> Faire une section sur ce qu'on a pas fait
+-> couche presentation , couche metier.

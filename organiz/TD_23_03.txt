@@ -1,0 +1,21 @@
+TD du 23 mars
+
+-> mettre à jour le git : OK
+
+-> corriger la bibliographie
+
+-> restructurer le mémoire : OK 
+
+-> mettre les algorithmes pour le mémoire : OK
+
+-> faire plusieurs sections sur le rendu : Ok
+
+-> corriger l'interface dans les besoins non fonctionnels car trop flou
+
+-> définir ce qu'est un L-system
+
+-> faire du pseudo code pour les algorithmes
+
+-> choisir l'outil de programmation 
+
+-> commencer l'implémentation

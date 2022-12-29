@@ -1,0 +1,23 @@
+-> Introduction :
+ce qu’on veut du projet, un affichage de ville de ce type là etc…
+classe abstraite bâtiments qui unifie ce que c’est un bâtiment + services (fonction connotation verbe), et citer qu'il existe déjà de plusieurs applis qui utilisent une génération de ville (ex: architectes)  
+
+-> déplacer les fichiers du mémoire dans report et les notes de TD dans meeting report : OK
+
+-> faire un plan pour le mémoire avec des parties vides à remplir après avec des sections : OK
+
+-> créer une table de sommaire : OK
+
+-> aérer certaines parties : revoir la taille de la police et des marges : OK
+
+-> rassembler les images dans l'analyse de l'existant : OK
+
+-> Écrire un besoin non-fonctionnel général après l'intro : type de ville, taille ... : OK
+
+-> besoins non fonctionnels -> besoins fonctionnels -> algorithmes : OK
+
+-> créer une section scénario d'utilisation qui décrira comment un utilisateur interagit avec l'application : OK
+
+-> sauvegarder la ville générée
+
+-> mettre des données fixes sur les besoins non fonctionnels (ex : autoroutes pente 6%, vitesse execution ...) et revoir la taille de la ville médiévale
