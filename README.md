@@ -4,12 +4,12 @@ The random city generation project consists of creating a map of a city from an 
 
 Project in collaboration with Elkerzazi Amine.
 
-##Interface 
+## Interface 
 
 <img width="549" alt="Capture d’écran 2023-01-01 à 21 31 15" src="https://user-images.githubusercontent.com/83234731/210183982-4576e4c2-ee1c-42da-9fb8-8e8e8ef452a0.png">
 <img width="531" alt="Capture d’écran 2023-01-01 à 21 31 25" src="https://user-images.githubusercontent.com/83234731/210183990-16661fd0-89f2-4941-bac9-dfb93c404dd4.png">
 
-#Demo
+# Demo
 
 <img width="1395" alt="Capture d’écran 2023-01-01 à 21 33 57" src="https://user-images.githubusercontent.com/83234731/210183995-5071a937-a33a-4ead-9cbf-03a056f79721.png">
 <img width="1015" alt="Capture d’écran 2023-01-01 à 21 32 17" src="https://user-images.githubusercontent.com/83234731/210183998-81d51245-e04b-475e-bb9f-5e44037df461.png">
